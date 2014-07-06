@@ -1,4 +1,4 @@
 /node_modules/
-/vendor/
+/assets/vendor/
 /sass/.sass-cache
 npm-debug.log

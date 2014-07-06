@@ -1,0 +1,11 @@
+// Basic input for all buttons
+@mixin btn-basic($color) {
+	background-color: transparent;
+	border-radius: $color;
+}
+
+// Basic input for all buttons (on hover)
+@mixin btn-basic-hover($color) {
+	background-color: $color;
+	border-radius: transparent;
+}

@@ -1,0 +1,14 @@
+.btn {
+	height: $btn-base-height;
+	transition: all 0.5s;
+	box-sizing: border-box;
+
+	.btn-info 			{ @include btn-basic($info) }
+	.btn-info:hover 	{ @include btn-basic-hover($info) }
+	.btn-success 		{ @include btn-basic($success) }
+	.btn-success:hover 	{ @include btn-basic-hover($success) }
+	.btn-warning 		{ @include btn-basic($warning) }
+	.btn-warning:hover 	{ @include btn-basic-hover($warning) }
+	.btn-danger 		{ @include btn-basic($error) }
+	.btn-danger:hover 	{ @include btn-basic-hover($error) }
+}
