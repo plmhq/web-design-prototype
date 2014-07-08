@@ -1,1 +1,9 @@
-$base-font-family: sans-serif, serif;
+// Google Fonts - Source Sans Pro
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+// Google Fonts - Monserrat
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+
+$base-font-family: "Helvetica", "Helvetica Neue", sans-serif, serif;
+$monserrat-font-family: "Monserrat", $base-font-family;
+$source-sans-font-family: "Source Sans Pro", $base-font-family;

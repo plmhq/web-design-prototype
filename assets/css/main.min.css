@@ -1,0 +1,35 @@
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  font: "Helvetica", "Helvetica Neue", sans-serif, serif; }
+
+.btn {
+  height: 30px;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .btn .btn-info {
+    background-color: transparent;
+    border-radius: #2aadc7; }
+  .btn .btn-info:hover {
+    background-color: #2aadc7;
+    border-radius: transparent; }
+  .btn .btn-success {
+    background-color: transparent;
+    border-radius: #4eea8f; }
+  .btn .btn-success:hover {
+    background-color: #4eea8f;
+    border-radius: transparent; }
+  .btn .btn-warning {
+    background-color: transparent;
+    border-radius: #faea47; }
+  .btn .btn-warning:hover {
+    background-color: #faea47;
+    border-radius: transparent; }
+  .btn .btn-danger {
+    background-color: transparent;
+    border-radius: #e33147; }
+  .btn .btn-danger:hover {
+    background-color: #e33147;
+    border-radius: transparent; }

@@ -1,6 +1,6 @@
 // Directories
-var _assets = './assets/',
-	_sheets = './sass/';
+var _assets = 'assets/',
+	_sheets = 'sass/';
 
 // Gulp dependencies
 var gulp 		= require('gulp'),
@@ -18,18 +18,18 @@ var express 	= require('express'),
 
 // Installs all bower components
 gulp.task('install', function() {
-	gulp.src(['./bower.json'])
+	return gulp.src(['./bower.json'])
 		.pipe(install())
 		.pipe(notify({ message: 'Bower components installed!' }));
 });
 
 // Run SaSS tasks
 gulp.task('sass', function() {
-	gulp.src(_sheets + '**/*.scss')
-		.pipe(sass({ style: 'expanded' }))
+	return gulp.src('./sass/default/main.scss')
+		.pipe(sass())
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 11', 'ios 6', 'android 4'))
 		.pipe(rename({ suffix: '.min' }))
-		.pipe(minify())
+		// .pipe(minify())
 		.pipe(gulp.dest(_assets + 'css'))
 		.pipe(livereload())
 		.pipe(notify({ message: 'SaSS tasks finished!' }));
@@ -48,8 +48,9 @@ gulp.task('server', function() {
 gulp.task('default', function() {
 	gulp.run('install');
 	gulp.run('sass');
+	gulp.run('server');
 
-	gulp.watch(sass + '**/*.scss', ['sass']);
+	gulp.watch([_sheets + 'default/**/*.scss', _sheets + 'default/*.scss'], ['sass']);
 	gulp.watch('./index.html')
 		.on('change', function(file) {
 			livereload().changed(file.path);

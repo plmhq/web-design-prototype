@@ -1,3 +1,6 @@
+@import "../util/colors";
+@import "../util/btn";
+
 .btn {
 	height: $btn-base-height;
 	transition: all 0.5s;
@@ -9,6 +12,6 @@
 	.btn-success:hover 	{ @include btn-basic-hover($success) }
 	.btn-warning 		{ @include btn-basic($warning) }
 	.btn-warning:hover 	{ @include btn-basic-hover($warning) }
-	.btn-danger 		{ @include btn-basic($error) }
-	.btn-danger:hover 	{ @include btn-basic-hover($error) }
+	.btn-danger 		{ @include btn-basic($danger) }
+	.btn-danger:hover 	{ @include btn-basic-hover($danger) }
 }
