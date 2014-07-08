@@ -1,0 +1,101 @@
+// --
+// Essential colors
+// --
+
+// info (bluish)
+$info: #2AADC7;
+$info-light: #2AE7EA;
+$info-dark: #2A92EA;
+
+// success (greenish)
+$success: #4EEA8F;
+$success-light: #4EFF9C;
+$success-dark: #4EC98F;
+
+// warning (yellowish)
+$warning: #FAEA47;
+$warning-light: #FAEA77;
+$warning-dark: #E5D64B;
+
+// danger (reddish)
+$danger: #E33147;
+$danger-light: #600000;
+$danger-dark: #F7504D;
+
+// dark tints (blackish)
+$dt: #1F1C1B;
+$dt-light: #36312F;
+$dt-dark: #121010;
+
+// light tints (light)
+$lt: #FFFFFF;
+$lt-light: #F2F2F2;
+$lt-dark: #E0E0E0;
+
+// gray tints (gray)
+$gr: #E6E6E6;
+$gr-light: #FCFCFC;
+$gr-dark: #C8C8C8;
+
+// defaults
+$default: $danger;
+$default-light: $danger-light;
+$default-dark: $danger-dark;
+
+
+
+
+
+// --
+// typography
+// --
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$monserrat-font-family: "Monserrat", $base-font-family;
+$source-sans-font-family: "Source Sans Pro", $base-font-family;
+
+
+
+
+// --
+// btn
+// --
+$btn-base-height: 30px;
+
+
+
+
+// -- 
+// navbar
+// --
+$navbar-height:                    60px !default;
+$navbar-margin-bottom:             $line-height-computed !default;
+$navbar-border-radius:             $border-radius-base !default;
+$navbar-padding-horizontal:        floor($grid-gutter-width / 2) !default;
+$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+
+$navbar-plm-color:             $default !default;
+$navbar-plm-bg:                $lt !default;
+$navbar-plm-border:            none;
+
+// Navbar links
+$navbar-plm-link-color:                $default !default;
+$navbar-plm-link-hover-color:          $default-light !default;
+$navbar-plm-link-hover-bg:             transparent !default;
+$navbar-plm-link-active-color:         #555 !default;
+$navbar-plm-link-active-bg:            darken($navbar-plm-bg, 6.5%) !default;
+$navbar-plm-link-disabled-color:       #ccc !default;
+$navbar-plm-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+$navbar-plm-brand-color:               $navbar-plm-link-color !default;
+$navbar-plm-brand-hover-color:         darken($navbar-plm-brand-color, 10%) !default;
+$navbar-plm-brand-hover-bg:            transparent !default;
+
+// Navbar toggle
+$navbar-plm-toggle-hover-bg:           #ddd !default;
+$navbar-plm-toggle-icon-bar-bg:        #ccc !default;
+$navbar-plm-toggle-border-color:       #ddd !default;
+
+
+
+

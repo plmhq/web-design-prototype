@@ -46,7 +46,7 @@ gulp.task('server', function() {
 
 // Default task
 gulp.task('default', function() {
-	gulp.run('install');
+	// gulp.run('install');
 	gulp.run('sass');
 	gulp.run('server');
 
