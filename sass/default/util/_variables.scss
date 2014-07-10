@@ -1,3 +1,4 @@
+// Import TWBS SaSS variables
 @import "../../assets/vendor/bootstrap-sass/lib/_variables";
 // --
 // Essential colors
@@ -110,6 +111,7 @@ $btn-base-height: 30px;
 
 
 
+
 // -- 
 // navbar
 // --
@@ -117,6 +119,7 @@ $btn-base-height: 30px;
 // basics
 $navbar-height:                    100px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
+$navbar-border:                    none;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
@@ -167,7 +170,8 @@ $navbar-plm-toggle-border-color:       #ddd !default;
 $countdown-bg: $default;
 $countdown-height: 45px;
 $countdown-text-color: $lt;
-$countdown-text-size: 14px;
+$countdown-text-size: 16px;
+$countdown-text-extra-size: 14px;
 $countdown-padding: floor($countdown-height / 4);
 
 
@@ -180,7 +184,8 @@ $content-gray-bg: $gr-light;
 $content-lt-bg: $lt;
 $content-padding: 50px;
 
-$content-heading-weight: 600;
-$content-font-size: 16px;
+$content-heading-weight: 700;
 $content-heading-color: $default;
+$content-heading-margin-top: 0;
+$content-heading-margin-bottom: 50px;
 $content-border: 1px solid $default;

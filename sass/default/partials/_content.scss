@@ -9,10 +9,18 @@
 	}
 
 	.content-heading {
-		text-transform: uppercase;
-		color: $content-heading-color;
-		font-weight: $content-heading-weight;
-		text-align: center;
+
+		& {
+			margin-bottom: $content-heading-margin-bottom;
+		}
+
+		h1, h2, h3, h4, h5 {
+			text-transform: uppercase;
+			color: $content-heading-color;
+			font-weight: $content-heading-weight;
+			text-align: center;
+			margin-top: $content-heading-margin-top;
+		}
 
 		&::after {
 			content: "";

@@ -13,10 +13,10 @@
 		& {
 			text-transform: uppercase;
 			font-weight: 700;
-			font-size: 16px;
+			font-size: $countdown-text-size;
 		}
 		> .extra {
-			font-size: 14px;
+			font-size: $countdown-text-extra-size;
 			font-weight: 600;
 		}
 	}

@@ -79,12 +79,15 @@ body {
 
 .navbar {
   position: relative;
-  height: 75px;
-  border: none; }
+  height: 50px;
+  border: none;
+  margin-bottom: 0; }
+
+.navbar-collapse {
+  padding: 0; }
 
 .navbar-plm {
   background-color: white;
-  margin-bottom: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .navbar-plm .navbar-brand {
@@ -97,25 +100,25 @@ body {
   .navbar-plm .navbar-nav {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-  .navbar-plm .navbar-nav > li {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-  .navbar-plm .navbar-nav > li:hover, .navbar-plm .navbar-nav > li:focus {
-    border-bottom: 5px solid #e33147;
-    -webkit-transition: all 0.25s ease;
-            transition: all 0.25s ease; }
-  .navbar-plm .navbar-nav > li > a {
-    color: #e33147;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-    .navbar-plm .navbar-nav > li > a:hover, .navbar-plm .navbar-nav > li > a:focus {
-      color: #600000;
+    .navbar-plm .navbar-nav > li {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .navbar-plm .navbar-nav > li:hover, .navbar-plm .navbar-nav > li:focus {
+        border-bottom: 5px solid #e33147;
+        -webkit-transition: all 0.25s ease;
+                transition: all 0.25s ease; }
+    .navbar-plm .navbar-nav > li > a {
+      color: #e33147;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      .navbar-plm .navbar-nav > li > a:hover, .navbar-plm .navbar-nav > li > a:focus {
+        color: #600000;
+        background-color: transparent; }
+    .navbar-plm .navbar-nav > .active > a, .navbar-plm .navbar-nav > .active > a:hover, .navbar-plm .navbar-nav > .active > a:focus {
+      color: white;
+      background-color: #e33147; }
+    .navbar-plm .navbar-nav > .disabled > a {
+      color: #cccccc;
       background-color: transparent; }
-  .navbar-plm .navbar-nav > .active > a, .navbar-plm .navbar-nav > .active > a:hover, .navbar-plm .navbar-nav > .active > a:focus {
-    color: white;
-    background-color: #e33147; }
-  .navbar-plm .navbar-nav > .disabled > a {
-    color: #cccccc;
-    background-color: transparent; }
   .navbar-plm .navbar-toggle {
     border-color: #dddddd; }
     .navbar-plm .navbar-toggle:hover, .navbar-plm .navbar-toggle:focus {
@@ -179,10 +182,13 @@ body {
   .content.content-gray {
     background: #fcfcfc; }
   .content .content-heading {
+    margin-bottom: 50px; }
+  .content .content-heading h1, .content .content-heading h2, .content .content-heading h3, .content .content-heading h4, .content .content-heading h5 {
     text-transform: uppercase;
     color: #e33147;
-    font-weight: 600;
-    text-align: center; }
-    .content .content-heading::after {
-      content: "";
-      border-bottom: 5px solid #e33147; }
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0; }
+  .content .content-heading::after {
+    content: "";
+    border-bottom: 5px solid #e33147; }

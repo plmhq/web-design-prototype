@@ -3,13 +3,17 @@
 
 .navbar {
   position: relative;
-  height: 75px; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  border: none
+  height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  border: $navbar-border;
+  margin-bottom: 0;
+}
+
+.navbar-collapse {
+	padding: 0; // Remove bootstrap default
 }
 
 .navbar-plm {
 	background-color: $navbar-plm-bg;
-	margin-bottom: 0;
 	box-sizing: border-box;
 
 
@@ -27,17 +31,13 @@
 	}
 
 	.navbar-nav {
-		& {
-			box-sizing: border-box;
-		}
+		box-sizing: border-box;
 		> li {
-			& {
-				box-sizing: border-box;
-			}
+			box-sizing: border-box;
 			&:hover,
 			&:focus {
-			border-bottom: $navbar-plm-link-hover-border;
-			transition: $navbar-plm-link-hover-border-transition;
+				border-bottom: $navbar-plm-link-hover-border;
+				transition: $navbar-plm-link-hover-border-transition;
 			}
 		}
 		> li > a {
@@ -46,16 +46,16 @@
 
 			&:hover,
 			&:focus {
-			color: $navbar-plm-link-hover-color;
-			background-color: $navbar-plm-link-hover-bg;
+				color: $navbar-plm-link-hover-color;
+				background-color: $navbar-plm-link-hover-bg;
 			}
 		}
 		> .active > a {
 			&,
 			&:hover,
 			&:focus {
-			color: $lt;
-			background-color: $navbar-plm-link-active-hover-bg;
+				color: $lt;
+				background-color: $navbar-plm-link-active-hover-bg;
 			}
 		}
 		> .disabled > a {
@@ -93,26 +93,26 @@
 		> .dropdown > a:focus .caret {
 			border-top-color: $navbar-plm-link-hover-color;
 			border-bottom-color: $navbar-plm-link-hover-color;
-	}
+		}
 
-	// Remove background color from open dropdown
-	> .open > a {
-		&,
-		&:hover,
-		&:focus {
-			background-color: $navbar-plm-link-active-bg;
-			color: $navbar-plm-link-active-color;
-			.caret {
-				border-top-color: $navbar-plm-link-active-color;
-				border-bottom-color: $navbar-plm-link-active-color;
+		// Remove background color from open dropdown
+		> .open > a {
+			&,
+			&:hover,
+			&:focus {
+				background-color: $navbar-plm-link-active-bg;
+				color: $navbar-plm-link-active-color;
+				.caret {
+					border-top-color: $navbar-plm-link-active-color;
+					border-bottom-color: $navbar-plm-link-active-color;
+				}
 			}
 		}
-	}
 
-	> .dropdown > a .caret {
-		border-top-color: $navbar-plm-link-color;
-		border-bottom-color: $navbar-plm-link-color;
-	}
+		> .dropdown > a .caret {
+			border-top-color: $navbar-plm-link-color;
+			border-bottom-color: $navbar-plm-link-color;
+		}
 
 
 		@media (max-width: $screen-xs-max) {
@@ -122,24 +122,24 @@
 					color: $navbar-plm-link-color;
 					&:hover,
 					&:focus {
-					color: $navbar-plm-link-hover-color;
-					background-color: $navbar-plm-link-hover-bg;
+						color: $navbar-plm-link-hover-color;
+						background-color: $navbar-plm-link-hover-bg;
 					}
 				}
 				> .active > a {
 					&,
 					&:hover,
 					&:focus {
-					color: $navbar-plm-link-active-color;
-					background-color: $navbar-plm-link-active-bg;
+						color: $navbar-plm-link-active-color;
+						background-color: $navbar-plm-link-active-bg;
 					}
 				}
 				> .disabled > a {
 					&,
 					&:hover,
 					&:focus {
-					color: $navbar-plm-link-disabled-color;
-					background-color: $navbar-plm-link-disabled-bg;
+						color: $navbar-plm-link-disabled-color;
+						background-color: $navbar-plm-link-disabled-bg;
 					}
 				}
 			}
