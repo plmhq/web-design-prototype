@@ -1,3 +1,4 @@
+@import "../../assets/vendor/bootstrap-sass/lib/_variables";
 // --
 // Essential colors
 // --
@@ -6,7 +7,7 @@
 $info: #2AADC7;
 $info-light: #2AE7EA;
 $info-dark: #2A92EA;
-
+	
 // success (greenish)
 $success: #4EEA8F;
 $success-light: #4EFF9C;
@@ -50,8 +51,53 @@ $default-dark: $danger-dark;
 // typography
 // --
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$monserrat-font-family: "Monserrat", $base-font-family;
+$montserrat-font-family: "Montserrat", $base-font-family;
 $source-sans-font-family: "Source Sans Pro", $base-font-family;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
+
+$font-size-h1:            floor($font-size-base * 2.6) !default; // ~36px
+$font-size-h2:            floor($font-size-base * 2.15) !default; // ~30px
+$font-size-h3:            ceil($font-size-base * 1.7) !default; // ~24px
+$font-size-h4:            ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil($font-size-base * 0.85) !default; // ~12px
+
+$line-height-base:        1.428571429 !default; // 20/14
+$line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~
+
+
+
+
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+$padding-base-vertical:          6px !default;
+$padding-base-horizontal:        12px !default;
+
+$padding-large-vertical:         10px !default;
+$padding-large-horizontal:       16px !default;
+
+$padding-small-vertical:         5px !default;
+$padding-small-horizontal:       10px !default;
+
+$line-height-large:              1.33 !default;
+$line-height-small:              1.5 !default;
+
+$border-radius-base:             4px !default;
+$border-radius-large:            6px !default;
+$border-radius-small:            3px !default;
+
+$component-active-color:         #fff !default;
+$component-active-bg:            $brand-primary !default;
+
+$caret-width-base:               4px !default;
+$caret-width-large:              5px !default;
+
 
 
 
@@ -67,7 +113,20 @@ $btn-base-height: 30px;
 // -- 
 // navbar
 // --
-$navbar-height:                    60px !default;
+
+// basics
+$navbar-height:                    100px !default;
+$navbar-margin-bottom:             $line-height-computed !default;
+$navbar-border-radius:             $border-radius-base !default;
+$navbar-padding-horizontal:        floor($grid-gutter-width / 2) !default;
+$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+
+$navbar-default-color:             #777 !default;
+$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+
+//
+$navbar-height:                    100px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor($grid-gutter-width / 2) !default;
@@ -81,8 +140,11 @@ $navbar-plm-border:            none;
 $navbar-plm-link-color:                $default !default;
 $navbar-plm-link-hover-color:          $default-light !default;
 $navbar-plm-link-hover-bg:             transparent !default;
+$navbar-plm-link-hover-border:         5px solid $default !default;
+$navbar-plm-link-hover-border-transition: all 0.25s ease;
 $navbar-plm-link-active-color:         #555 !default;
 $navbar-plm-link-active-bg:            darken($navbar-plm-bg, 6.5%) !default;
+$navbar-plm-link-active-hover-bg:      $default !default;
 $navbar-plm-link-disabled-color:       #ccc !default;
 $navbar-plm-link-disabled-bg:          transparent !default;
 
@@ -99,3 +161,26 @@ $navbar-plm-toggle-border-color:       #ddd !default;
 
 
 
+// --
+// countdown
+// --
+$countdown-bg: $default;
+$countdown-height: 45px;
+$countdown-text-color: $lt;
+$countdown-text-size: 14px;
+$countdown-padding: floor($countdown-height / 4);
+
+
+
+
+// --
+// content
+// --
+$content-gray-bg: $gr-light;
+$content-lt-bg: $lt;
+$content-padding: 50px;
+
+$content-heading-weight: 600;
+$content-font-size: 16px;
+$content-heading-color: $default;
+$content-border: 1px solid $default;

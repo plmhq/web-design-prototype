@@ -25,7 +25,7 @@ gulp.task('install', function() {
 
 // Run SaSS tasks
 gulp.task('sass', function() {
-	return gulp.src('./sass/default/main.scss')
+	return gulp.src(_sheets + 'default/main.scss')
 		.pipe(sass())
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 11', 'ios 6', 'android 4'))
 		.pipe(rename({ suffix: '.min' }))

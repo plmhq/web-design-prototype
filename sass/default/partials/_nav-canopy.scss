@@ -1,0 +1,63 @@
+// Load all variables
+@import "../util/_variables";
+
+$nav-canopy-height: 50px;
+$nav-canopy-bg: $gr;
+$nav-canopy-color: $default;
+$nav-canopy-padding: floor($nav-canopy-height) / 4;
+
+.nav-canopy {
+	height: $nav-canopy-height;
+	background-color: $nav-canopy-bg;
+	box-sizing: padding-box;
+	padding-top: $nav-canopy-padding;
+	padding-bottom: $nav-canopy-padding;
+	font-family: $montserrat-font-family;
+	overflow: hidden;
+
+	@include clearfix();
+
+	// Remove default text decoration
+	a {
+		color: $default;
+		text-decoration: none;
+	}
+
+	.nav-canopy-heading > a {
+		float: left;
+		&:hover {
+			font-weight: 700;
+		}
+	}
+
+	.nav-canopy-links {
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		float: right;
+
+		> li {
+			& {
+				font-size: 20px;
+				display: inline-block;
+			}
+
+			// &::before {
+			// 	content: "";
+			// 	margin-left: 20px;
+			// 	margin-right: 20px;
+			// 	border-left: 1px solid $gr-dark;
+			// }
+
+			&:hover > a {
+				color: $default;
+				transition: all 1s;
+			}
+
+			> a {
+				color: $gr-dark;
+			}
+		}
+	}
+}

@@ -2,8 +2,8 @@
 // @import "util/colors"
 // @import "util/typography"
 // @import "util/btn"
-import "util/_base";
-
+@import "util/_base";
+@import "../../assets/vendor/bootstrap-sass/lib/_mixins";
 // Mixins
 @import "mixins/_btn";
 
@@ -11,5 +11,7 @@ import "util/_base";
 @import "partials/_base";
 @import "partials/_btn";
 @import "partials/_alert";
-@import "partials/nav-canopy";
-@import "partials/navbar-plm";
+@import "partials/_nav-canopy";
+@import "partials/_navbar";
+@import "partials/_countdown";
+@import "partials/_content";

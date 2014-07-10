@@ -3,3 +3,10 @@
 
 // Google Fonts - Monserrat
 @import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@import "../util/_variables";
+
+html,
+body {
+	font-family: $source-sans-font-family;
+}

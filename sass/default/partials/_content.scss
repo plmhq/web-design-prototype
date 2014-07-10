@@ -1,0 +1,22 @@
+@import "../util/_variables";
+
+.content {
+	background: $content-lt-bg;
+	padding-top: $content-padding;
+	padding-bottom: $content-padding;
+	&.content-gray {
+		background: $content-gray-bg;
+	}
+
+	.content-heading {
+		text-transform: uppercase;
+		color: $content-heading-color;
+		font-weight: $content-heading-weight;
+		text-align: center;
+
+		&::after {
+			content: "";
+			border-bottom: 5px solid $default;
+		}
+	}
+}
