@@ -180,7 +180,7 @@ $countdown-padding: floor($countdown-height / 4);
 // --
 // content
 // --
-$content-gray-bg: $gr-light;
+$content-gray-bg: $gr;
 $content-lt-bg: $lt;
 $content-padding: 50px;
 
@@ -189,3 +189,14 @@ $content-heading-color: $default;
 $content-heading-margin-top: 0;
 $content-heading-margin-bottom: 50px;
 $content-border: 1px solid $default;
+
+
+
+
+
+// -- 
+// recent news (home)
+// --
+$recent-news-row-margin: 50px;
+$recent-news-cover-height: 300px;
+$recent-news-title-height: 50px;
