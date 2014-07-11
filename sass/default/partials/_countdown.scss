@@ -14,6 +14,10 @@
 			text-transform: uppercase;
 			font-weight: 700;
 			font-size: $countdown-text-size;
+
+			@media (max-width: 768px) {
+				font-size: floor($countdown-text-size * 0.75);
+			}
 		}
 		> .extra {
 			font-size: $countdown-text-extra-size;

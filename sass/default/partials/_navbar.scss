@@ -1,11 +1,11 @@
-@import "../../assets/vendor/bootstrap-sass/lib/_variables";
 @import "../util/_variables";
+@import "../../assets/vendor/bootstrap-sass/lib/_variables";
 
 .navbar {
-  position: relative;
-  height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  border: $navbar-border;
-  margin-bottom: 0;
+	position: relative;
+	height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+	border: $navbar-border;
+	margin-bottom: 0;
 }
 
 .navbar-collapse {
@@ -33,29 +33,43 @@
 	.navbar-nav {
 		box-sizing: border-box;
 		> li {
-			box-sizing: border-box;
-			&:hover,
-			&:focus {
-				border-bottom: $navbar-plm-link-hover-border;
+			& {
+				box-sizing: border-box;
+				height: $navbar-height;
+				// padding-top: $navbar-plm-link-padding;
+				// padding-bottom: $navbar-plm-link-padding;
+			}
+			&:not(.active):hover,
+			&:not(.active):focus {
+				border-top: $navbar-plm-link-hover-border;
 				transition: $navbar-plm-link-hover-border-transition;
 			}
 		}
 		> li > a {
-			color: $navbar-plm-link-color;
-			font-family: $montserrat-font-family;
+			& {
+				color: $navbar-plm-link-color;
+				font-family: $montserrat-font-family;
+				// height: $navbar-height;
+				padding-top: $navbar-plm-link-padding;
+				padding-bottom: $navbar-plm-link-padding;
+			}
 
 			&:hover,
 			&:focus {
 				color: $navbar-plm-link-hover-color;
-				background-color: $navbar-plm-link-hover-bg;
+				background: $navbar-plm-link-hover-bg;
 			}
 		}
-		> .active > a {
-			&,
-			&:hover,
-			&:focus {
-				color: $lt;
+		> .active {
+			& {
 				background-color: $navbar-plm-link-active-hover-bg;
+			}
+			> a {
+				&,
+				&:hover,
+				&:focus {
+					color: $lt;
+				}
 			}
 		}
 		> .disabled > a {
