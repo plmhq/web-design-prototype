@@ -2,7 +2,7 @@
 @import "../../assets/vendor/bootstrap-sass/lib/_variables";
 
 .navbar {
-	position: relative;
+	// position: relative;
 	height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
 	border: $navbar-border;
 	margin-bottom: 0;
@@ -19,6 +19,7 @@
 
 	.navbar-brand {
 		color: $navbar-plm-brand-color;
+
 		&:hover,
 		&:focus {
 			color: $navbar-plm-brand-hover-color;
@@ -34,13 +35,12 @@
 		box-sizing: border-box;
 		> li {
 			& {
-				box-sizing: border-box;
 				height: $navbar-height;
-				// padding-top: $navbar-plm-link-padding;
-				// padding-bottom: $navbar-plm-link-padding;
 			}
+
 			&:not(.active):hover,
 			&:not(.active):focus {
+				box-sizing: border-box;
 				border-top: $navbar-plm-link-hover-border;
 				transition: $navbar-plm-link-hover-border-transition;
 			}
@@ -49,7 +49,6 @@
 			& {
 				color: $navbar-plm-link-color;
 				font-family: $montserrat-font-family;
-				// height: $navbar-height;
 				padding-top: $navbar-plm-link-padding;
 				padding-bottom: $navbar-plm-link-padding;
 			}

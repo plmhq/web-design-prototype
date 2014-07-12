@@ -99,6 +99,8 @@ $component-active-bg:            $brand-primary !default;
 $caret-width-base:               4px !default;
 $caret-width-large:              5px !default;
 
+$default-radius:                 3px;
+
 
 
 
@@ -133,7 +135,7 @@ $navbar-plm-link-color:                $default !default;
 $navbar-plm-link-hover-color:          $default-light !default;
 $navbar-plm-link-hover-bg:             transparent !default;
 $navbar-plm-link-hover-border:         5px solid $default !default;
-$navbar-plm-link-hover-border-transition: all 0.25s ease;
+$navbar-plm-link-hover-border-transition: all 0.15s ease-in-out;
 $navbar-plm-link-active-color:         #555 !default;
 $navbar-plm-link-active-bg:            darken($navbar-plm-bg, 6.5%) !default;
 $navbar-plm-link-active-hover-bg:      $default !default;
@@ -188,6 +190,26 @@ $content-border: 1px solid $default;
 // -- 
 // recent news (home)
 // --
-$recent-news-row-margin: 50px;
 $recent-news-cover-height: 300px;
+$recent-news-title-bg: $lt;
 $recent-news-title-height: 50px;
+$recent-news-title-vertical-padding: floor($recent-news-title-height / 4);
+$recent-news-border-radius: $default-radius;
+
+$recent-news-title-horizontal-padding: 0;
+$recent-news-title-icon-padding: $recent-news-title-horizontal-padding;
+$recent-news-title-text-padding: $recent-news-title-horizontal-padding;
+
+$recent-news-first-row-margin: $recent-news-title-height;
+$mq-768-recent-news-first-row-margin: 0; // max-width: 768
+
+
+
+
+
+// --
+// recent events (home)
+// --
+$recent-events-height: 400px;
+$recent-events-title-height: 50px;
+$recent-events-title-bg: rgba(255, 255, 255, 0.5);
