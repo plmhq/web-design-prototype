@@ -37,7 +37,7 @@
 		height: $recent-news-cover-height;
 		width: 100%;
 		overflow: hidden;
-		background-color: #fff;
+		background-color: $lt;
 		border-radius: $recent-news-border-radius $recent-news-border-radius 0 0;
 
 		img {
@@ -55,7 +55,7 @@
 			padding-top: $recent-news-title-vertical-padding;
 			padding-bottom: $recent-news-title-vertical-padding;
 			border-radius: 0 0 $recent-news-border-radius $recent-news-border-radius;
-			box-shadow: 0 2px 3px #ddd;
+			box-shadow: 0 2px 3px $shadow;
 		}
 
 		.news-head {
@@ -64,10 +64,10 @@
 
 		.news-icon-container {
 			& {
-				border-right: 1px solid #ddd;
-				font-size: 24px;
+				border-right: $recent-news-title-separator;
+				font-size: $recent-news-title-icon-size;
 				// margin-top: -2px;
-				height: 24px;
+				height: $recent-news-title-icon-height;
 				padding-right: $recent-news-title-icon-padding;
 			}
 

@@ -206,7 +206,7 @@ body {
   height: 300px;
   width: 100%;
   overflow: hidden;
-  background-color: #fff;
+  background-color: white;
   border-radius: 3px 3px 0 0; }
   .recent-news .news-cover img {
     width: 100%;
@@ -220,26 +220,61 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 0 0 3px 3px;
-  -webkit-box-shadow: 0 2px 3px #ddd;
-          box-shadow: 0 2px 3px #ddd; }
+  -webkit-box-shadow: 0 2px 3px #dddddd;
+          box-shadow: 0 2px 3px #dddddd; }
 .recent-news .news-title .news-head {
   font-weight: 700; }
 .recent-news .news-title .news-icon-container {
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #dddddd;
   font-size: 24px;
   height: 24px;
   padding-right: 0; }
 .recent-news .news-title .news-icon-container .news-icon {
   vertical-align: top; }
 
-.recent-events .recent-cover {
+.recent-events {
+  position: relative; }
+.recent-events .event-date {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 75px;
+  height: 75px;
+  -webkit-box-sizing: padding-box;
+          box-sizing: padding-box;
+  padding: 5px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 3px;
+  color: white; }
+  .recent-events .event-date .date-day {
+    display: block;
+    font-size: 60px;
+    margin: -20px; }
+  .recent-events .event-date .date {
+    text-transform: uppercase; }
+.recent-events .event-cover {
   height: 400px;
   width: 100%;
+  border-radius: 3px;
   overflow: hidden; }
-  .recent-events .recent-cover img {
+  .recent-events .event-cover img {
     width: 100%;
     height: 100%; }
-.recent-events .recent-title {
-  position: relative;
+.recent-events .event-title {
+  position: absolute;
+  top: 350px;
+  width: 100%;
   height: 50px;
-  background: rgba(255, 255, 255, 0.5); }
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: padding-box;
+          box-sizing: padding-box;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  text-shadow: 0 1px 0 #000;
+  border-radius: 0 0 3px 3px; }

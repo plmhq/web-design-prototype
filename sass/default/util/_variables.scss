@@ -44,6 +44,8 @@ $default: $danger;
 $default-light: $danger-light;
 $default-dark: $danger-dark;
 
+$shadow: #ddd;
+
 
 
 
@@ -53,21 +55,23 @@ $default-dark: $danger-dark;
 // --
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $montserrat-font-family: "Montserrat", $base-font-family;
+$montserrat-font-family-normal: 500;
+$montserrat-font-family-bold: 700;
 $source-sans-font-family: "Source Sans Pro", $base-font-family;
 
-$font-size-base:          14px !default;
-$font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
-$font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
+$font-size-base:			14px !default;
+$font-size-large:			ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-small:			ceil($font-size-base * 0.85) !default; // ~12px
 
-$font-size-h1:            floor($font-size-base * 2.6) !default; // ~36px
-$font-size-h2:            floor($font-size-base * 2.15) !default; // ~30px
-$font-size-h3:            ceil($font-size-base * 1.7) !default; // ~24px
-$font-size-h4:            ceil($font-size-base * 1.25) !default; // ~18px
-$font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil($font-size-base * 0.85) !default; // ~12px
+$font-size-h1:				floor($font-size-base * 2.6) !default; // ~36px
+$font-size-h2:				floor($font-size-base * 2.15) !default; // ~30px
+$font-size-h3:				ceil($font-size-base * 1.7) !default; // ~24px
+$font-size-h4:				ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-h5:				$font-size-base !default;
+$font-size-h6:				ceil($font-size-base * 0.85) !default; // ~12px
 
-$line-height-base:        1.428571429 !default; // 20/14
-$line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~
+$line-height-base:			1.428571429 !default; // 20/14
+$line-height-computed:		floor($font-size-base * $line-height-base) !default; // ~
 
 
 
@@ -77,29 +81,30 @@ $line-height-computed:    floor($font-size-base * $line-height-base) !default; /
 // -------------------------
 // Based on 14px font-size and 1.428 line-height (~20px to start)
 
-$padding-base-vertical:          6px !default;
-$padding-base-horizontal:        12px !default;
+$padding-base-vertical:				6px !default;
+$padding-base-horizontal:			12px !default;
 
-$padding-large-vertical:         10px !default;
-$padding-large-horizontal:       16px !default;
+$padding-large-vertical:		 	10px !default;
+$padding-large-horizontal:			16px !default;
 
-$padding-small-vertical:         5px !default;
-$padding-small-horizontal:       10px !default;
+$padding-small-vertical:		 	5px !default;
+$padding-small-horizontal:	  	 	10px !default;
 
-$line-height-large:              1.33 !default;
-$line-height-small:              1.5 !default;
+$line-height-large:			  		1.33 !default;
+$line-height-small:			  		1.5 !default;
 
-$border-radius-base:             4px !default;
-$border-radius-large:            6px !default;
-$border-radius-small:            3px !default;
+$border-radius-base:			 	4px !default;
+$border-radius-large:				6px !default;
+$border-radius-small:				3px !default;
 
-$component-active-color:         #fff !default;
-$component-active-bg:            $brand-primary !default;
+$component-active-color:		 	#fff !default;
+$component-active-bg:				$brand-primary !default;
 
-$caret-width-base:               4px !default;
-$caret-width-large:              5px !default;
+$caret-width-base:					4px !default;
+$caret-width-large:					5px !default;
 
-$default-radius:                 3px;
+$default-radius:					3px;
+$default-box-shadow:				0 2px 3px $shadow;
 
 
 
@@ -109,6 +114,7 @@ $default-radius:                 3px;
 // btn
 // --
 $btn-base-height: 30px;
+$btn-base-padding: floor($btn-base-height / 2);
 
 
 
@@ -119,40 +125,40 @@ $btn-base-height: 30px;
 // --
 
 // basics
-$navbar-height:                    75px;
-$navbar-margin-bottom:             $line-height-computed;
-$navbar-border:                    none;
-$navbar-border-radius:             $border-radius-base;
-$navbar-padding-horizontal:        floor($grid-gutter-width / 2);
-$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);
+$navbar-height:					75px;
+$navbar-margin-bottom:			 $line-height-computed;
+$navbar-border:					none;
+$navbar-border-radius:			 $border-radius-base;
+$navbar-padding-horizontal:		floor($grid-gutter-width / 2);
+$navbar-padding-vertical:		  (($navbar-height - $line-height-computed) / 2);
 
-$navbar-plm-color:             $default !default;
-$navbar-plm-bg:                $lt !default;
-$navbar-plm-border:            none;
+$navbar-plm-color:			 $default !default;
+$navbar-plm-bg:				$lt !default;
+$navbar-plm-border:			none;
 
 // Navbar links
-$navbar-plm-link-color:                $default !default;
-$navbar-plm-link-hover-color:          $default-light !default;
-$navbar-plm-link-hover-bg:             transparent !default;
-$navbar-plm-link-hover-border:         5px solid $default !default;
+$navbar-plm-link-color:					$default;
+$navbar-plm-link-hover-color:			$default-light;
+$navbar-plm-link-hover-bg:			 	transparent;
+$navbar-plm-link-hover-border:		 	5px solid $default;
 $navbar-plm-link-hover-border-transition: all 0.15s ease-in-out;
-$navbar-plm-link-active-color:         #555 !default;
-$navbar-plm-link-active-bg:            darken($navbar-plm-bg, 6.5%) !default;
-$navbar-plm-link-active-hover-bg:      $default !default;
-$navbar-plm-link-disabled-color:       #ccc !default;
-$navbar-plm-link-disabled-bg:          transparent !default;
+$navbar-plm-link-active-color:			#555;
+$navbar-plm-link-active-bg:				darken($navbar-plm-bg, 6.5%);
+$navbar-plm-link-active-hover-bg:		$default;
+$navbar-plm-link-disabled-color:		#ccc;
+$navbar-plm-link-disabled-bg:			transparent;
 
-$navbar-plm-link-padding: floor($navbar-height / 3);
+$navbar-plm-link-padding:				floor($navbar-height / 3);
 
 // Navbar brand label
-$navbar-plm-brand-color:               $navbar-plm-link-color !default;
-$navbar-plm-brand-hover-color:         darken($navbar-plm-brand-color, 10%) !default;
-$navbar-plm-brand-hover-bg:            transparent !default;
+$navbar-plm-brand-color:				$navbar-plm-link-color !default;
+$navbar-plm-brand-hover-color:			darken($navbar-plm-brand-color, 10%) !default;
+$navbar-plm-brand-hover-bg:				transparent !default;
 
 // Navbar toggle
-$navbar-plm-toggle-hover-bg:           #ddd !default;
-$navbar-plm-toggle-icon-bar-bg:        #ccc !default;
-$navbar-plm-toggle-border-color:       #ddd !default;
+$navbar-plm-toggle-hover-bg:			#ddd !default;
+$navbar-plm-toggle-icon-bar-bg:			#ccc !default;
+$navbar-plm-toggle-border-color:		#ddd !default;
 
 
 
@@ -193,8 +199,12 @@ $content-border: 1px solid $default;
 $recent-news-cover-height: 300px;
 $recent-news-title-bg: $lt;
 $recent-news-title-height: 50px;
+$recent-news-title-separator: 1px solid $shadow;
 $recent-news-title-vertical-padding: floor($recent-news-title-height / 4);
 $recent-news-border-radius: $default-radius;
+
+$recent-news-title-icon-size: 24px;
+$recent-news-title-icon-height: $recent-news-title-icon-size;
 
 $recent-news-title-horizontal-padding: 0;
 $recent-news-title-icon-padding: $recent-news-title-horizontal-padding;
@@ -212,4 +222,21 @@ $mq-768-recent-news-first-row-margin: 0; // max-width: 768
 // --
 $recent-events-height: 400px;
 $recent-events-title-height: 50px;
-$recent-events-title-bg: rgba(255, 255, 255, 0.5);
+$recent-events-title-bg: rgba(0, 0, 0, 0.3);
+$recent-events-title-padding: floor($recent-events-title-height / 4);
+$recent-events-title-font-size: $font-size-h5;
+
+$recent-events-border-radius: $default-radius;
+$recent-events-cover-border-radius: $recent-events-border-radius;
+$recent-events-title-border-radius: 0 0 $recent-events-border-radius $recent-events-border-radius;
+
+$recent-events-date-bg: rgba(0, 0, 0, 0.5);
+$recent-events-date-position: 15px;
+$recent-events-date-position-left: $recent-events-date-position;
+$recent-events-date-position-top: $recent-events-date-position;
+$recent-events-date-size: 75px;
+$recent-events-date-width: $recent-events-date-size;
+$recent-events-date-height: $recent-events-date-size;
+$recent-events-date-padding: 5px;
+$recent-events-date-font-size: ceil($font-size-h2 * 2);
+$recent-events-date-day-margin: -20px;
