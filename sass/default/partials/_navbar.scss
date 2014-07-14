@@ -36,6 +36,7 @@
 		> li {
 			& {
 				height: $navbar-height;
+				border-top: $navbar-plm-link-border;
 			}
 
 			&:not(.active):hover,
@@ -49,8 +50,8 @@
 			& {
 				color: $navbar-plm-link-color;
 				font-family: $montserrat-font-family;
-				padding-top: $navbar-plm-link-padding;
-				padding-bottom: $navbar-plm-link-padding;
+				padding-top: $navbar-plm-link-padding-top;
+				padding-bottom: $navbar-plm-link-padding-bottom;
 			}
 
 			&:hover,

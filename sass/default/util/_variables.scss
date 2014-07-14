@@ -128,19 +128,21 @@ $btn-base-padding: floor($btn-base-height / 2);
 $navbar-height:					75px;
 $navbar-margin-bottom:			 $line-height-computed;
 $navbar-border:					none;
-$navbar-border-radius:			 $border-radius-base;
+$navbar-border-radius:			$border-radius-base;
 $navbar-padding-horizontal:		floor($grid-gutter-width / 2);
-$navbar-padding-vertical:		  (($navbar-height - $line-height-computed) / 2);
+$navbar-padding-vertical:		(($navbar-height - $line-height-computed) / 2);
 
-$navbar-plm-color:			 $default !default;
+$navbar-plm-color:			$default !default;
 $navbar-plm-bg:				$lt !default;
 $navbar-plm-border:			none;
 
 // Navbar links
 $navbar-plm-link-color:					$default;
+$navbar-plm-link-border-width:			5px;
+$navbar-plm-link-border:				$navbar-plm-link-border-width solid transparent;
 $navbar-plm-link-hover-color:			$default-light;
 $navbar-plm-link-hover-bg:			 	transparent;
-$navbar-plm-link-hover-border:		 	5px solid $default;
+$navbar-plm-link-hover-border:		 	$navbar-plm-link-border-width solid $default;
 $navbar-plm-link-hover-border-transition: all 0.15s ease-in-out;
 $navbar-plm-link-active-color:			#555;
 $navbar-plm-link-active-bg:				darken($navbar-plm-bg, 6.5%);
@@ -149,6 +151,8 @@ $navbar-plm-link-disabled-color:		#ccc;
 $navbar-plm-link-disabled-bg:			transparent;
 
 $navbar-plm-link-padding:				floor($navbar-height / 3);
+$navbar-plm-link-padding-top:			$navbar-plm-link-padding - 5px;
+$navbar-plm-link-padding-bottom:		$navbar-plm-link-padding + 5px;
 
 // Navbar brand label
 $navbar-plm-brand-color:				$navbar-plm-link-color !default;

@@ -97,7 +97,8 @@ body {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
     .navbar-plm .navbar-nav > li {
-      height: 75px; }
+      height: 75px;
+      border-top: 5px solid transparent; }
     .navbar-plm .navbar-nav > li:not(.active):hover, .navbar-plm .navbar-nav > li:not(.active):focus {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -107,8 +108,8 @@ body {
     .navbar-plm .navbar-nav > li > a {
       color: #e33147;
       font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      padding-top: 25px;
-      padding-bottom: 25px; }
+      padding-top: 20px;
+      padding-bottom: 30px; }
     .navbar-plm .navbar-nav > li > a:hover, .navbar-plm .navbar-nav > li > a:focus {
       color: #600000;
       background: transparent; }
