@@ -98,11 +98,11 @@ body {
             box-sizing: border-box; }
     .navbar-plm .navbar-nav > li {
       height: 75px;
-      border-top: 5px solid transparent; }
+      border-top: 2px solid transparent; }
     .navbar-plm .navbar-nav > li:not(.active):hover, .navbar-plm .navbar-nav > li:not(.active):focus {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
-      border-top: 5px solid #e33147;
+      border-top: 2px solid #e33147;
       -webkit-transition: all 0.15s ease-in-out;
               transition: all 0.15s ease-in-out; }
     .navbar-plm .navbar-nav > li > a {
