@@ -17,8 +17,7 @@ Requirements include:
 - sass
 
 ```
-npm install -g bower
-npm install -g gulp
+npm install -g bower gulp
 
 gulp install
 gulp
