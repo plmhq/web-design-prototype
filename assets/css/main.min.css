@@ -5,35 +5,213 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .btn {
-  height: 30px;
-  -webkit-transition: all 0.5s;
-          transition: all 0.5s;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border: 2px solid transparent;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-  .btn .btn-info {
+          box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-transition: 0s all;
+          transition: 0s all;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .btn:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+  .btn:hover, .btn:focus {
+    background: transparent;
+    border-color: #e0e0e0;
+    color: #e0e0e0;
+    text-decoration: none; }
+  .btn:active, .btn.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.btn-default {
+  color: #e0e0e0;
+  background-color: transparent;
+  border-color: #dddddd;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all; }
+  .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+    color: white;
+    background-color: #dddddd;
+    border-color: transparent; }
+  .open .btn-default.dropdown-toggle {
+    color: #e0e0e0;
     background-color: transparent;
-    border-radius: #2aadc7; }
-  .btn .btn-info:hover {
-    background-color: #2aadc7;
-    border-radius: transparent; }
-  .btn .btn-success {
+    border-color: #bebebe; }
+  .btn-default:active, .btn-default.active {
+    background-image: none; }
+  .open .btn-default.dropdown-toggle {
+    background-image: none; }
+  .btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+    color: white;
+    background-color: #dddddd;
+    border-color: 0; }
+
+.btn-primary {
+  color: white;
+  background-color: transparent;
+  border-color: #357ebd;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    color: white;
+    background-color: #428bca;
+    border-color: transparent; }
+  .open .btn-primary.dropdown-toggle {
+    color: white;
     background-color: transparent;
-    border-radius: #4eea8f; }
-  .btn .btn-success:hover {
-    background-color: #4eea8f;
-    border-radius: transparent; }
-  .btn .btn-warning {
-    background-color: transparent;
-    border-radius: #faea47; }
-  .btn .btn-warning:hover {
+    border-color: #285e8e; }
+  .btn-primary:active, .btn-primary.active {
+    background-image: none; }
+  .open .btn-primary.dropdown-toggle {
+    background-image: none; }
+  .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+    color: white;
+    background-color: #428bca;
+    border-color: 0; }
+
+.btn-warning {
+  color: #faea47;
+  background-color: transparent;
+  border-color: #eea236;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all; }
+  .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
+    color: white;
     background-color: #faea47;
-    border-radius: transparent; }
-  .btn .btn-danger {
+    border-color: transparent; }
+  .open .btn-warning.dropdown-toggle {
+    color: #faea47;
     background-color: transparent;
-    border-radius: #e33147; }
-  .btn .btn-danger:hover {
+    border-color: #d58512; }
+  .btn-warning:active, .btn-warning.active {
+    background-image: none; }
+  .open .btn-warning.dropdown-toggle {
+    background-image: none; }
+  .btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
+    color: white;
+    background-color: #faea47;
+    border-color: 0; }
+
+.btn-danger {
+  color: #e33147;
+  background-color: transparent;
+  border-color: #d43f3a;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all; }
+  .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
+    color: white;
     background-color: #e33147;
-    border-radius: transparent; }
+    border-color: transparent; }
+  .open .btn-danger.dropdown-toggle {
+    color: #e33147;
+    background-color: transparent;
+    border-color: #ac2925; }
+  .btn-danger:active, .btn-danger.active {
+    background-image: none; }
+  .open .btn-danger.dropdown-toggle {
+    background-image: none; }
+  .btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
+    color: white;
+    background-color: #e33147;
+    border-color: 0; }
+
+.btn-success {
+  color: #4eea8f;
+  background-color: transparent;
+  border-color: #4cae4c;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all; }
+  .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+    color: white;
+    background-color: #4eea8f;
+    border-color: transparent; }
+  .open .btn-success.dropdown-toggle {
+    color: #4eea8f;
+    background-color: transparent;
+    border-color: #398439; }
+  .btn-success:active, .btn-success.active {
+    background-image: none; }
+  .open .btn-success.dropdown-toggle {
+    background-image: none; }
+  .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
+    color: white;
+    background-color: #4eea8f;
+    border-color: 0; }
+
+.btn-info {
+  color: #2aadc7;
+  background-color: transparent;
+  border-color: #46b8da;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all; }
+  .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
+    color: white;
+    background-color: #2aadc7;
+    border-color: transparent; }
+  .open .btn-info.dropdown-toggle {
+    color: #2aadc7;
+    background-color: transparent;
+    border-color: #269abc; }
+  .btn-info:active, .btn-info.active {
+    background-image: none; }
+  .open .btn-info.dropdown-toggle {
+    background-image: none; }
+  .btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .btn-info.active {
+    color: white;
+    background-color: #2aadc7;
+    border-color: 0; }
+
+.btn-inverse {
+  color: #36312f;
+  background-color: transparent;
+  border-color: #36312f;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all; }
+  .btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active {
+    color: white;
+    background-color: #36312f;
+    border-color: transparent; }
+  .open .btn-inverse.dropdown-toggle {
+    color: #36312f;
+    background-color: transparent;
+    border-color: #151313; }
+  .btn-inverse:active, .btn-inverse.active {
+    background-image: none; }
+  .open .btn-inverse.dropdown-toggle {
+    background-image: none; }
+  .btn-inverse.disabled, .btn-inverse.disabled:hover, .btn-inverse.disabled:focus, .btn-inverse.disabled:active, .btn-inverse.disabled.active, .btn-inverse[disabled], .btn-inverse[disabled]:hover, .btn-inverse[disabled]:focus, .btn-inverse[disabled]:active, .btn-inverse[disabled].active, fieldset[disabled] .btn-inverse, fieldset[disabled] .btn-inverse:hover, fieldset[disabled] .btn-inverse:focus, fieldset[disabled] .btn-inverse:active, fieldset[disabled] .btn-inverse.active {
+    color: white;
+    background-color: #36312f;
+    border-color: 0; }
 
 .nav-canopy {
   height: 50px;

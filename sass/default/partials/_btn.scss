@@ -1,16 +1,81 @@
 @import "../util/_variables";
 
-.btn {
-	height: $btn-base-height;
-	transition: all 0.5s;
-	box-sizing: border-box;
+// .btn {
+// 	height: $btn-base-height;
+// 	transition: all 0.5s;
+// 	box-sizing: border-box;
 
-	// .btn-info 			{ @include btn-basic($info) }
-	// .btn-info:hover 	{ @include btn-basic-hover($info) }
-	// .btn-success 		{ @include btn-basic($success) }
-	// .btn-success:hover 	{ @include btn-basic-hover($success) }
-	// .btn-warning 		{ @include btn-basic($warning) }
-	// .btn-warning:hover 	{ @include btn-basic-hover($warning) }
-	// .btn-danger 		{ @include btn-basic($danger) }
-	// .btn-danger:hover 	{ @include btn-basic-hover($danger) }
+// 	// .btn-info 			{ @include btn-basic($info) }
+// 	// .btn-info:hover 	{ @include btn-basic-hover($info) }
+// 	// .btn-success 		{ @include btn-basic($success) }
+// 	// .btn-success:hover 	{ @include btn-basic-hover($success) }
+// 	// .btn-warning 		{ @include btn-basic($warning) }
+// 	// .btn-warning:hover 	{ @include btn-basic-hover($warning) }
+// 	// .btn-danger 		{ @include btn-basic($danger) }
+// 	// .btn-danger:hover 	{ @include btn-basic-hover($danger) }
+// }
+
+// Core styles
+.btn {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border: $btn-border;
+  box-sizing: border-box;
+  font-size: $btn-font-size;
+  font-weight: 700;
+  // text-transform: uppercase;
+  font-family: $btn-font-family;
+
+  // transition for all states
+  transition: $btn-transition-duration all;
+  @include button-size($btn-padding-vertical, $btn-padding-horizontal, $btn-font-size, $line-height-base, $border-radius-base);
+  @include user-select(none);
+
+  &:focus {
+    @include tab-focus();
+  }
+
+  &:hover,
+  &:focus {
+  	background: $btn-border-hover-bg;
+  	border-color: $btn-default-color;
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    pointer-events: none; // Future-proof disabling of clicks
+    @include opacity(.65);
+    @include box-shadow(none);
+  }
+
 }
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default 	{ @include button-variant-custom($btn-default-color, #fff, transparent, #ddd, #ddd); }
+.btn-primary 	{ @include button-variant-custom($btn-primary-color, #fff, transparent, $btn-primary-bg, $btn-primary-border); }
+.btn-warning 	{ @include button-variant-custom($btn-warning-color, #fff, transparent, $btn-warning-bg, $btn-warning-border); }
+.btn-danger 	{ @include button-variant-custom($btn-danger-color, #fff, transparent, $btn-danger-bg, $btn-danger-border); }
+.btn-success 	{ @include button-variant-custom($btn-success-color, #fff, transparent, $btn-success-bg, $btn-success-border); }
+.btn-info 		{ @include button-variant-custom($btn-info-color, #fff, transparent, $btn-info-bg, $btn-info-border); }
+.btn-inverse 	{ @include button-variant-custom($btn-inverse-color, #fff, transparent, $btn-inverse-bg, $btn-inverse-color); }

@@ -107,6 +107,10 @@ $default-radius:					3px;
 $default-box-shadow:				0 2px 3px $shadow;
 $default-spacing:					50px;
 
+$default-transition-duration:		0.35s;
+$default-sm-transition-duration:	floor($default-transition-duration / 1.5);
+$default-lg-transition-duration:	ceil($default-transition-duration * 1.5);
+
 
 
 
@@ -114,8 +118,41 @@ $default-spacing:					50px;
 // --
 // btn
 // --
-$btn-base-height: 30px;
-$btn-base-padding: floor($btn-base-height / 2);
+$btn-padding: $default-spacing / 5;
+$btn-padding-horizontal: $btn-padding * 2;
+$btn-padding-vertical: $btn-padding;
+
+$btn-border-size: 2px;
+$btn-border-color: transparent;
+$btn-border: $btn-border-size solid $btn-border-color;
+$btn-border-hover-bg: $btn-border-color;
+
+$btn-font-family: $montserrat-font-family;
+$btn-font-size: $font-size-h5;
+
+$btn-transition-duration: $default-sm-transition-duration;
+
+// Button color schemes
+$btn-default-color: $lt-dark;
+$btn-default-bg: $btn-default-color;
+
+// $btn-primary-color:
+// $btn-primary-bg:
+
+$btn-info-color: $info;
+$btn-info-bg: $btn-info-color;
+
+$btn-success-color: $success;
+$btn-success-bg: $btn-success-color;
+
+$btn-warning-color: $warning;
+$btn-warning-bg: $btn-warning-color;
+
+$btn-danger-color: $danger;
+$btn-danger-bg: $btn-danger-color;
+
+$btn-inverse-color: $dt-light;
+$btn-inverse-bg: $btn-inverse-color;
 
 
 

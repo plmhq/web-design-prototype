@@ -55,4 +55,8 @@ gulp.task('default', function() {
 		.on('change', function(file) {
 			livereload().changed(file.path);
 		});
+	gulp.watch('./button.html')
+		.on('change', function(file) {
+			livereload().changed(file.path);
+		});
 })
