@@ -1,7 +1,7 @@
 web-design-prototype
 ====================
 
-Design prototype for the web repository
+Design prototype for the [web](//github.com/plmph/web) repository. Not much documentation is provided to this repository.
 
 ## Preview ##
 

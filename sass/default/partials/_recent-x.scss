@@ -1,0 +1,150 @@
+@import "../util/_variables";
+
+.recent-x {
+	& {
+		position: relative;
+	}
+
+	// Default
+	.x-date {
+		position: absolute;
+		top: $recent-x-date-position-top;
+		left: $recent-x-date-position-left;
+		background: $recent-x-date-bg;
+		width: $recent-x-date-width;
+		height: $recent-x-date-height;
+		box-sizing: padding-box;
+		padding-top: $recent-x-date-padding-top;
+		padding-bottom: $recent-x-date-padding;
+		padding-left: $recent-x-date-padding;
+		padding-right: $recent-x-date-padding;
+		text-align: center;
+		font-family: $montserrat-font-family;
+		font-size: $recent-x-date-day-font-size;
+		font-weight: $montserrat-font-family-bold;
+		border-radius: $recent-x-border-radius;
+		color: $lt;
+
+		.date-day {
+			display: block;
+			font-size: $recent-x-date-font-size;
+			margin: $recent-x-date-day-margin;
+		}
+
+		.date {
+			text-transform: uppercase;
+		}
+	}
+
+
+
+	// Default
+	.x-cover {
+		height: $recent-x-height;
+		width: 100%;
+		border-radius: $recent-x-cover-border-radius;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+	.x-title {
+		position: absolute;
+		top: $recent-x-title-position-top;
+		width: 100%;
+		height: $recent-x-title-height;
+		background: $recent-x-title-bg;
+		box-sizing: padding-box;
+		padding-top: $recent-x-title-padding;
+		padding-bottom: $recent-x-title-padding;
+		text-align: center;
+		color: #fff;
+		font-weight: 700;
+		font-size: $recent-x-title-font-size;
+		text-shadow: 0 1px 0 #000;
+		border-radius: $recent-x-title-border-radius;
+	}
+}
+
+.recent-x-sm-first-two {
+	margin-bottom: $recent-x-sm-margin;
+}
+
+.recent-x-sm-last-two {
+	margin-top: $recent-x-sm-margin;
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+// Smaller
+.recent-x-sm {
+	& {
+		position: relative;
+	}
+
+	.x-date {
+		position: absolute;
+		top: $recent-x-sm-date-position-top;
+		left: $recent-x-sm-date-position-left;
+		background: $recent-x-sm-date-bg;
+		width: $recent-x-sm-date-width;
+		height: $recent-x-sm-date-height;
+		box-sizing: padding-box;
+		padding-top: $recent-x-sm-date-padding-top;
+		padding-bottom: $recent-x-sm-date-padding-bottom;
+		padding-left: $recent-x-sm-date-padding-horizontal;
+		padding-right: $recent-x-sm-date-padding-horizontal;
+		text-align: center;
+		font-family: $montserrat-font-family;
+		font-size: $recent-x-sm-date-day-font-size;
+		font-weight: $montserrat-font-family-bold;
+		border-radius: $recent-x-sm-border-radius;
+		color: $lt;
+
+		.date-day {
+			display: block;
+			font-size: $recent-x-sm-date-font-size;
+			margin: $recent-x-sm-date-day-margin;
+		}
+
+		.date {
+			text-transform: uppercase;
+		}
+	}
+
+	// Smaller
+	.x-cover {
+		height: $recent-x-sm-height;
+		width: 100%;
+		border-radius: $recent-x-sm-cover-border-radius;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.x-title {
+		position: absolute;
+		top: $recent-x-sm-title-position-top;
+		width: 100%;
+		height: $recent-x-sm-title-height;
+		background: $recent-x-sm-title-bg;
+		box-sizing: padding-box;
+		padding-top: $recent-x-sm-title-padding;
+		padding-bottom: $recent-x-sm-title-padding;
+		text-align: center;
+		color: #fff;
+		font-weight: 700;
+		font-size: $recent-x-sm-title-font-size;
+		text-shadow: 0 1px 0 #000;
+		border-radius: $recent-x-sm-title-border-radius;
+	}
+}

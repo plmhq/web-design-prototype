@@ -1,0 +1,31 @@
+@import "../util/_variables";
+
+footer {
+	background-color: $footer-bg;
+	height: $footer-height;
+	padding-top: $footer-padding-top;
+	padding-bottom: $footer-padding-bottom;
+	color: $footer-font-color;
+	overflow: hidden;
+	@include clearfix();
+
+	.social-media {
+		@media (max-width: 480px) {
+			display: none;
+		}
+
+		a {
+			color: $lt;
+			text-decoration: none;
+			margin-left: $footer-social-media-margin-left;
+			margin-right: $footer-social-media-margin-right;
+
+			&:hover,
+			&:active,
+			&:focus, {
+				color: $footer-social-media-hover-color;
+				transition: $footer-social-media-transition-duration all;
+			}
+		}
+	}
+}

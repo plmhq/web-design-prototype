@@ -1,12 +1,12 @@
 @import "../util/_variables";
 
-	.news-first-row {
-		margin-bottom: $recent-news-first-row-margin;
+.news-first-row {
+	margin-bottom: $recent-news-first-row-margin;
 
-		@media (max-width: 768px) {
-			margin-bottom: $mq-768-recent-news-first-row-margin;
-		}
+	@media (max-width: 768px) {
+		margin-bottom: $mq-768-recent-news-first-row-margin;
 	}
+}
 
 .recent-news {
 
@@ -16,6 +16,10 @@
 	// &:nth-child(3) {
 	// 	margin-bottom: $recent-news-row-margin;
 	// }
+
+	@media (max-width: 768px) {
+		margin-bottom: $mq-768-recent-news-margin;
+	}
 
 	.row {
 		.col-md-3,
