@@ -4,7 +4,18 @@
 $nav-canopy-height: 50px;
 $nav-canopy-bg: $gr;
 $nav-canopy-color: $default;
+$nav-canopy-hover-color: darken($nav-canopy-color, 12.5%);
 $nav-canopy-padding: floor($nav-canopy-height) / 4;
+
+// Gives a spacing between the logo and the text
+$nav-canopy-heading-margin: 5px;
+// Adjusts the size of the logo based on the height
+$nav-canopy-logo-size: floor($nav-canopy-height / 1.5);
+// Adjusts the logo (vertically centered)
+$nav-canopy-margin: floor($nav-canopy-logo-size / 6) * -1;
+
+// Transition
+$nav-canopy-heading-transition: $default-transition-duration all;
 
 .nav-canopy {
 	height: $nav-canopy-height;
@@ -19,14 +30,32 @@ $nav-canopy-padding: floor($nav-canopy-height) / 4;
 
 	// Remove default text decoration
 	a {
-		color: $default;
+		color: $nav-canopy-color;
 		text-decoration: none;
 	}
 
-	.nav-canopy-heading > a {
+	.nav-canopy-heading {
 		float: left;
-		&:hover {
-			font-weight: 700;
+		> a {
+			// margin-left: $nav-canopy-heading-margin;
+			vertical-align: top;
+			&:hover {
+				transition: $nav-canopy-heading-transition;
+				color: $nav-canopy-hover-color;
+			}
+
+			.nav-canopy-logo {
+				display: inline-block;
+				margin-right: $nav-canopy-heading-margin;
+				width: $nav-canopy-logo-size;
+				height: $nav-canopy-logo-size;
+
+				img {
+					margin-top: $nav-canopy-margin;
+					width: 100%;
+					height: 100%;
+				}
+			}
 		}
 	}
 
