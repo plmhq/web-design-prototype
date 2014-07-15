@@ -59,14 +59,18 @@
 		height: $recent-x-title-height;
 		background: $recent-x-title-bg;
 		box-sizing: padding-box;
-		padding-top: $recent-x-title-padding;
-		padding-bottom: $recent-x-title-padding;
+		padding: $recent-x-title-padding;
 		text-align: center;
 		color: #fff;
 		font-weight: 700;
 		font-size: $recent-x-title-font-size;
 		text-shadow: 0 1px 0 #000;
 		border-radius: $recent-x-title-border-radius;
+
+		// 
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
 	}
 }
 
